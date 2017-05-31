@@ -1,0 +1,61 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>HTML5 Swipe Gallery</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+
+        <link rel="stylesheet" href="css/main.css">
+           
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <main>		
+			<div id="slider" class="swipe">
+				<div class='swipe-wrap'>
+					<div style="background-image: url('img/gallery/StockSnap_53ZL5GR6DC.jpg')"></div>
+					<div style="background-image: url('img/gallery/StockSnap_BA9AFFE0BF.jpg')"></div>
+					<div style="background-image: url('img/gallery/StockSnap_G9CLJC5580.jpg')"></div>
+					<div style="background-image: url('img/gallery/StockSnap_JBW2PXDOL6.jpg')"></div>
+					<div style="background-image: url('img/gallery/StockSnap_TNK87N7464.jpg')"></div>
+					<div style="background-image: url('img/gallery/StockSnap_Y01VDYAX63.jpg')"></div>
+				</div>
+			</div>
+			<div id="progress">
+				<div></div>
+			</div>
+			<nav class="flex-container">
+				<div class="flex-item">				
+					<a href="#" data-action="prev" aria-controls="slider"><span class="icon-prev"></span></a>
+				</div><!-- @about: flex 1 -->	
+				<div class="flex-item">
+					<a href="#" data-action="zoom-out" aria-controls="slider"><span class="icon-zoom-out"></span></a>
+					<a href="#" data-action="zoom-reset" aria-controls="slider"><span class="icon-reset-zoom"></span></a>
+					<a href="#" data-action="zoom-in" aria-controls="slider"><span class="icon-zoom-in"></span></a>
+				</div><!-- @about: flex 2 -->	
+				<div class="flex-item">
+					<a href="#" data-action="next" aria-controls="slider"><span class="icon-next"></span></a>
+				</div><!-- @about: flex 3 -->	
+			</nav><!-- @about: navigation bar -->
+		</main>
+
+        <script src="vendor/jquery/dist/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="vendor/jquery/dist/jquery.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        
+        <!-- @Link http://manuelstofer.github.io/pinchzoom/ -->
+        <script src="vendor/pinchzoom/src/pinchzoom.js"></script>
+        
+ 		<!-- @Link http://manuelstofer.github.io/pinchzoom/ -->
+ 		<script src="vendor/Swipe/swipe.js"></script>
+        
+        <script src="js/main.js"></script>
+    </body>
+</html>

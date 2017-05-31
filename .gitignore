@@ -1,0 +1,5 @@
+selfpacker.sh
+node_modules/
+.settings/
+.sass-cache/
+Thumbs.db

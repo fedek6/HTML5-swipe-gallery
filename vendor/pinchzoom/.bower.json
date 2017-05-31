@@ -1,0 +1,12 @@
+{
+  "name": "pinchzoom",
+  "homepage": "https://github.com/manuelstofer/pinchzoom",
+  "_release": "b8662b28cf",
+  "_resolution": {
+    "type": "commit",
+    "commit": "b8662b28cf233de83ea612d1930f83ccf0bfce5b"
+  },
+  "_source": "https://github.com/manuelstofer/pinchzoom.git",
+  "_target": "b8662b28cf233de83ea612d1930f83ccf0bfce5b",
+  "_originalSource": "https://github.com/manuelstofer/pinchzoom.git"
+}

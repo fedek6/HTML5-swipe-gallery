@@ -1,0 +1,170 @@
+/**
+ *   Gloabl
+ */
+body, html {
+  width: 100vw;
+  height: 100vh;
+  overflow:hidden;
+  background-color: Black;
+  
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+}
+
+/**
+ *   Flex declaration
+ */
+.flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    }
+
+.flex-item:nth-child(1) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+
+.flex-item:nth-child(2) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+
+.flex-item:nth-child(3) {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    }
+
+/**
+ * Nav   
+ */
+main nav {
+  height: 64px;
+
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  background: $bar-color;
+}
+
+// center middle icon container
+main nav div:nth-child(2) {
+  text-align: center;
+}
+
+// icon look
+main nav a {
+  height: $bar-height;
+  padding: 0 $btn-padding;
+  display: inline-block;
+  color: $icon-color;
+  text-decoration: none;
+  font-size: $icon-height;
+  line-height: $bar-height;
+  text-align: center;
+  outline: none;
+}
+/**
+ *  Kiosk gallery
+ */
+#slider {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+  height: calc(100% - #{$bar-height});
+}
+
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+  max-height: 100%;
+  height: 100%;
+}
+.swipe-wrap > div {
+  float:left;
+ /** width:100%; **/
+  position: relative;
+  width: 100vw;
+ /** height: 100vh; **/
+  height: 100%;
+   -webkit-user-drag: none;
+
+
+  
+}
+.swipe-wrap > div > div {
+  /* background-size: cover;  */
+  width: 100vw;
+  height: 100vh;
+  
+  background-size: auto 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+   -webkit-user-drag: none;
+   
+}
+.swipe-wrap > div img {
+  width: 100%;
+  height: auto;
+   -webkit-user-drag: none;
+}
+/**
+ *   Progress bar
+ */
+#progress {
+  position: fixed;
+  bottom: 90px;
+  width: 100%;
+  height: 1px;
+  z-index: 100;
+  padding: 0 32px;
+  box-sizing: border-box;
+}
+#progress > div {
+  height: 1px;
+  width: 0px;
+  min-width: 8px;
+  background-color: White;
+  opacity: 0.7;
+  transition: width 250ms ease-out;
+  box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
+}
