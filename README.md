@@ -3,7 +3,7 @@
 Fullscreen swipe gallery with pinchzoom support based on HTML5 for kiosk use. It was tested during exhibition in National Museum in Warsaw.
 
 __But why HTML?__
-We nedded gallery witch pinch zoom that runs in Kiosk Pro App which supports only websites.
+We nedded gallery with pinch zoom that runs in Kiosk Pro App which supports only websites.
 
 ## Requirements
 My solution works great with [Kiosk Pro App](http://www.kioskproapp.com/) on iPad Air 2 (iOS 10.3.2). It was also tested on Galaxy Tab 10.1 but was unresponsive. 
