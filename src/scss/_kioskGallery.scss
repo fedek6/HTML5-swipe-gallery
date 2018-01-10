@@ -86,11 +86,6 @@ main nav {
   background: $bar-color;
 }
 
-// center middle icon container
-main nav div:nth-child(2) {
-  text-align: center;
-}
-
 // icon look
 main nav a {
   height: $bar-height;
@@ -103,6 +98,12 @@ main nav a {
   text-align: center;
   outline: none;
 }
+
+// center middle icon container
+main nav div:nth-child(2) {
+  text-align: center;
+}
+
 /**
  *  Kiosk gallery
  */
@@ -139,8 +140,12 @@ main nav a {
   background-size: auto 100%;
   background-position: center center;
   background-repeat: no-repeat;
-   -webkit-user-drag: none;
-   
+  -webkit-user-drag: none;
+  /**
+   * Prevent animation blackness
+   */
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
 }
 .swipe-wrap > div img {
   width: 100%;
@@ -167,4 +172,23 @@ main nav a {
   opacity: 0.7;
   transition: width 250ms ease-out;
   box-shadow: 1px 1px 1px 1px rgba(0,0,0,0.3);
+}
+
+/* Larger screens */
+@media only screen and (min-device-width : 768px) {
+  /**
+  * Nav   
+  */
+  main nav {
+    height: 64px;
+    background: $bar-color;
+  }
+
+  // icon look
+  main nav a {
+    height: $bar-height-lg;
+    padding: 0 $btn-padding-lg;
+    font-size: $icon-height-lg;
+    line-height: $bar-height-lg;
+  }
 }

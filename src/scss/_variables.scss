@@ -1,8 +1,16 @@
 /**
- *   Icons bar
+ * Icons bar small screen
  */
 $bar-height:              64px;
 $bar-color:               Black;
 $icon-height:             32px;
-$btn-padding:             24px;
+$btn-padding:             8px;
 $icon-color:              White;
+
+/**
+ *  Icons bar large screen
+ */
+ $bar-height-lg:              64px;
+ $icon-height-lg:             32px;
+ $btn-padding-lg:             24px;
+
