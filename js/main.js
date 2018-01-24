@@ -6,10 +6,14 @@ $(window).bind(
   }
 );
 
-$(function() {
+$( window ).load(function() {
   // Handler for .ready() called.
   console.log( 'hello world' );
   
+	/**
+	 * Preload images
+	 */
+
 	/**
 	 * Pinch zoom init
 	 */
